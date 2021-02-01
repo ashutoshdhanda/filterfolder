@@ -28,11 +28,11 @@ for file in onlyfiles:
 newlist = set([x for x in filenames if filenames.count(x) == 1])
 
 #remove the python script and classes file from deletion list.
-pythonscript = "filterfodler"
+pythonscript = "filterfolder"
 datasetclasses = "classes"
 newlist.remove(pythonscript)
 newlist.remove(datasetclasses)
 #append file-extension to every element and deleted it.
-has = [s + ".jgp" for s in newlist]
+has = [s + ".jpeg" for s in newlist]
 for x in has:
 	os.remove(x)
